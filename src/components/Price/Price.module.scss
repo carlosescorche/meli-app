@@ -1,0 +1,30 @@
+.price {
+  position: relative;
+  display: flex;
+  font-weight: 300;
+
+  .amount {
+    padding-right: 3px;
+  }
+
+  .decimals {
+    font-size: 17px;
+  }
+
+  .free {
+    width: 15px;
+    height: 15px;
+    background: #00a650;
+    border-radius: 15px;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  &.s {
+    font-size: 24px;
+  }
+
+  &.m {
+    font-size: 30px;
+  }
+}

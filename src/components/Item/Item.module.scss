@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+
+.item {
+  position: relative;
+  display: flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid $border-color;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 2;
+    padding: 0 15px 0 25px;
+
+    a {
+      color: $text-color;
+      &:hover {
+        color: $text-secondary-color;
+      }
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 5px 0 7px;
+    }
+
+    @media (max-width: $break-point) {
+      padding: 0;
+    }
+  }
+
+  .condition {
+    flex: 1;
+    padding: 25px;
+    text-align: right;
+
+    @media (max-width: $break-point) {
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  &:last-child {
+    border-width: 0;
+  }
+
+  @media (max-width: $break-point) {
+    flex-direction: column;
+  }
+}

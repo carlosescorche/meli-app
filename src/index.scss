@@ -1,0 +1,39 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Lato", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-color;
+  color: $text-color;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+main {
+  position: relative;
+  padding: 20px $container-padding;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  > div {
+    margin: 10px auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover,
+  &:active {
+    color: $link-secondary-color;
+  }
+}

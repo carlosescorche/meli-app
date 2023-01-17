@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Meli App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend application developed with React.js to search products from Mercado Libre API.
+
+Works together with this [backend](https://github.com/carlosescorche/meli-api)   
 
 ## Available Scripts
 

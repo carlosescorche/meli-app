@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+
+.container {
+  position: relative;
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: $break-point) {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 15px 0 30px;
+  }
+
+  .content {
+    width: 60%;
+    padding-right: 20px;
+
+    @media (max-width: $break-point) {
+      width: 100%;
+    }
+
+    .image {
+      border-bottom: 1px solid $border-color;
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      color: #666;
+      font-size: 20px;
+      line-height: 28px;
+      overflow: hidden;
+    }
+  }
+
+  .sidebar {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    @media (max-width: $break-point) {
+      width: 100%;
+    }
+
+    .condition {
+      span {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.55);
+        margin-right: 5px;
+
+        &:not(:last-child):after {
+          content: "|";
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .price {
+      margin: 20px 0 25px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+.header {
+  position: relative;
+  background-color: $primary-color;
+  border-bottom: 1px solid $border-color;
+
+  padding: 10px 0;
+  width: 100%;
+
+  .container {
+    position: relative;
+    display: flex;
+
+    padding: 0 $container-padding;
+    margin: 0 auto;
+
+    max-width: $container-width;
+
+    @media (max-width: $break-point) {
+      flex-direction: column;
+    }
+  }
+
+  .form {
+    padding: 0 25px 0 50px;
+
+    @media (max-width: $break-point) {
+      padding: 20px 0 10px 0;
+    }
+  }
+}

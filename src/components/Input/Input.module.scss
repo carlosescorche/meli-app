@@ -1,0 +1,53 @@
+$brackgound: #fff;
+$border: 1px solid white;
+$border-radius: 4px;
+$box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+$color: #333;
+
+.input {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  input {
+    display: block;
+    padding: 7px 60px 9px 15px;
+    margin: 0;
+
+    background-color: $brackgound;
+    color: $color;
+
+    border: $border;
+    border-radius: $border-radius;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: $box-shadow;
+    outline: 0;
+
+    min-width: 600px;
+
+    @media (max-width: 900px) {
+      min-width: 400px;
+    }
+
+    @media (max-width: 700px) {
+      min-width: auto;
+    }
+  }
+
+  button {
+    display: inline-block;
+    padding: 7px 9px;
+    margin: 0;
+
+    background-color: $brackgound;
+
+    border: $border;
+    border-radius: $border-radius;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: $box-shadow;
+
+    cursor: pointer;
+  }
+}
